@@ -307,7 +307,7 @@ def create_toprow(is_img2img):
                     outputs=[],
                 )
 
-                 def popup():
+                def popup():
                     gr.Interface.show_message("记得给我赞助哟~总当白嫖怪不好~", shared.state.generated_content)
 
                 submit.click(
