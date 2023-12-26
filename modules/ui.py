@@ -307,6 +307,15 @@ def create_toprow(is_img2img):
                     outputs=[],
                 )
 
+                 def popup():
+                    gr.Interface.show_message("记得给我赞助哟~总当白嫖怪不好~", shared.state.generated_content)
+
+                submit.click(
+                    fn=popup,
+                    inputs=[],
+                    outputs=[],
+                )
+
             with gr.Row(elem_id=f"{id_part}_tools"):
                 paste = ToolButton(value=paste_symbol, elem_id="paste")
                 clear_prompt_button = ToolButton(value=clear_prompt_symbol, elem_id=f"{id_part}_clear_prompt")
